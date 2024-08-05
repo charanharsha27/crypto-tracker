@@ -34,7 +34,7 @@ const Header = () => {
             <CustomTypography onClick={()=> navigate("/")}  variant="h6" component="div" sx={{ flexGrow: 1 }}>
                 Crypto Eye
             </CustomTypography>
-            <Button color="inherit">Login</Button>
+            {/* <Button color="inherit">Login</Button> */}
             <Select style={{
                 width:100,
                 height:40,
