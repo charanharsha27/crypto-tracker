@@ -1,0 +1,118 @@
+.container {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  @media (max-width: 960px) {
+    .container {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
+  .sidebar {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 25px;
+    border-right: 2px solid grey;
+  }
+  
+  @media (max-width: 960px) {
+    .sidebar {
+      width: 100%;
+    }
+  }
+  
+  .heading {
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .description {
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    padding: 25px;
+    padding-bottom: 15px;
+    padding-top: 0;
+    text-align: justify;
+  }
+  
+  .marketData {
+    align-self: start;
+    padding: 25px;
+    padding-top: 10px;
+    width: 100%;
+  }
+  
+  @media (max-width: 960px) {
+    .marketData {
+      display: flex;
+      justify-content: space-around;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .marketData {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
+  @media (max-width: 360px) {
+    .marketData {
+      align-items: start;
+    }
+  }
+  
+  .mainContent {
+    flex: 1;
+    padding: 25px;
+  }
+
+
+  .container1 {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+    padding: 40px;
+  }
+  
+  @media (max-width: 960px) {
+    .container {
+      width: 100%;
+      margin-top: 0;
+      padding: 20px;
+      padding-top: 0;
+    }
+  }
+
+  .button-1 {
+    border: 1px solid gold;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-family: "Montserrat", sans-serif;
+    cursor: pointer;
+    background-color: transparent;
+    color: black;
+    font-weight: 500;
+    width: 22%;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .button-1:hover {
+    background-color: gold;
+    color: black;
+  }
+  
+  .button-1.selected {
+    background-color: gold;
+    color: black;
+    font-weight: 700;
+  }
+  
